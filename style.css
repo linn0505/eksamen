@@ -1,0 +1,337 @@
+a {
+    font-family: 'Monoton', cursive;
+    color: #153CD6;
+    font-size: 3rem;
+    text-decoration: none;
+
+}
+
+
+a:hover {
+    color: #FFEB00;
+    font-size: 3.4rem;
+}
+
+p {
+    font-family: 'Monoton', cursive;
+    color: #153CD6;
+    font-size: 4rem;
+}
+
+
+
+h8 {
+    font-family: 'Raleway', sans-serif;
+    color: #153CD6;
+    font-size: 1.1rem;
+}
+
+h9 {
+    font-family: 'Monoton', cursive;
+    color: #153CD6;
+    font-size: 5rem;
+
+}
+
+h10 {
+    font-family: 'Monoton', cursive;
+    color: #153CD6;
+    font-size: 1rem;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+footer {
+    font-family: 'Monoton', cursive;
+    color: #153CD6;
+    font-size: 0.8rem;
+
+    margin-top: 2vw;
+    text-align: center;
+
+}
+
+body {
+    background-color: #F5BAC2;
+}
+
+
+/* BURGERMENU */
+#menuToggle {
+    display: block;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+
+    z-index: 1;
+
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+#menuToggle input {
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+
+    cursor: pointer;
+
+    opacity: 0;
+    /* hide this */
+    z-index: 2;
+    /* and place it over the hamburger */
+
+
+}
+
+/*
+ * Just a quick hamburger
+ */
+#menuToggle span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+
+    background: #153CD6;
+    border-radius: 3px;
+
+    z-index: 1;
+
+    transform-origin: 4px 0px;
+
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+        background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+        opacity 0.55s ease;
+}
+
+#menuToggle span:first-child {
+    transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2) {
+    transform-origin: 0% 100%;
+}
+
+/*
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menuToggle input:checked ~ span {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: #153CD6;
+}
+
+/*
+ * But let's hide the middle one.
+ */
+#menuToggle input:checked ~ span:nth-last-child(3) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+#menuToggle input:checked ~ span:nth-last-child(2) {
+    opacity: 1;
+    transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+#menu {
+    position: absolute;
+    width: 300px;
+    margin: -100px 0 0 0;
+    padding: 50px;
+    padding-top: 100px;
+    right: -100px;
+
+    background: #ededed;
+    list-style-type: none;
+
+    /* to stop flickering of text in safari */
+
+    transform-origin: 0% 0%;
+    transform: translate(100%, 0);
+
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+}
+
+#menu li {
+    padding: 10px 0;
+    font-size: 22px;
+}
+
+/*
+ * And let's fade it in from the left
+ */
+#menuToggle input:checked ~ ul {
+    transform: scale(1.0, 1.0);
+    opacity: 1;
+}
+
+/***************BURGER MENU SLUT******************/
+
+.linn_marie {
+
+    text-align: center;
+    margin-top: -1.5vw;
+}
+
+/*****STYLING AF LINKS******/
+
+
+
+.link_portfolio {
+    margin-top: 2vw;
+    margin-left: 25vw;
+    font-size: 6rem;
+    text-decoration-line: underline;
+}
+
+.link_hvem {
+    margin-top: 6vw;
+    margin-left: 17vw;
+
+}
+
+.link_kontakt {
+    margin-top: 6vw;
+    margin-left: 10vw;
+
+}
+
+/*********** SLUT********/
+#ramme {
+
+    width: 60vw;
+    height: 48vw;
+    border-style: solid;
+    border-color: #153CD6;
+    border-width: medium;
+
+}
+
+.ramme_position {
+
+    margin: auto;
+    margin-top: 2vw;
+    height: 10vw;
+    padding: 1vw;
+}
+
+/****STYLING AF CIRKLER*****/
+
+.cirkel_1 {
+    height: 4.5vw;
+    width: 4.5vw;
+    border-radius: 100%;
+    display: inline-block;
+    border: 1.5px solid #153CD6;
+    margin-top: -100vw;
+    margin-left: -19vw;
+}
+
+.cirkel_2 {
+    height: 7vw;
+    width: 7vw;
+    border-radius: 50%;
+    display: inline-block;
+    border: 1.5px solid #153CD6;
+    margin-top: -80vw;
+    margin-left: -20vw;
+}
+
+/*******HVEM ER JEG********/
+.hvem_er_jeg {
+    margin-left: 13vw;
+    margin-top: -1.5vw;
+}
+
+img {
+    height: 40vw;
+    width: 49vw;
+    margin-top: -1vw;
+    margin-left: -5vw;
+}
+
+.text {
+    height: 10vw;
+    width: 49vw;
+    padding: none;
+    box-sizing: border-box;
+    margin-top: -40vw;
+    margin-left: 30vw;
+
+}
+
+/*******HVEM ER JEG SLUT*******/
+
+/********PORTFOLIO********/
+
+.portfolio {
+    margin-left: 8vw;
+    margin-top: 2vw;
+}
+
+sectionwrapper {
+    width: 100%;
+    height: 100%;
+}
+
+#tema_1 {
+    background-image: url(portfolio_pics/Group%2030.svg);
+    width: 26vw;
+    height: 26vw;
+    background-size: 100%;
+    position: absolute;
+    margin-top: 3vw;
+    margin-left: 1.5vw;
+}
+
+#tema_2 {
+    background-image: url(portfolio_pics/Group%2031.svg);
+    width: 24vw;
+    height: 24vw;
+    background-size: 100%;
+    position: absolute;
+    margin-left: 30vw;
+    margin-top: 18vw;
+}
+
+#tema_3 {
+    background-image: url(portfolio_pics/Group%2032.svg);
+    width: 21vw;
+    height: 21vw;
+    background-size: 100%;
+    position: absolute;
+    margin-left: 50vw;
+    margin-top: -2vw;
+}
+
+#tema_4 {
+    background-image: url(portfolio_pics/Group%2033.svg);
+    width: 26vw;
+    height: 26vw;
+    background-size: 100%;
+    position: absolute;
+    margin-left: 71vw;
+    margin-top: 15vw;
+}
+
+
+#web {
+    margin-right: 10vw;
+    margin-top: 50vw;
+}
