@@ -39,8 +39,11 @@ h10 {
     font-size: 1rem;
 }
 
+
+
 html {
     scroll-behavior: smooth;
+
 }
 
 footer {
@@ -291,7 +294,7 @@ sectionwrapper {
 }
 
 #tema_1 {
-    background-image: url(portfolio_pics/Group%2030.svg);
+
     width: 26vw;
     height: 26vw;
     background-size: 100%;
@@ -301,7 +304,7 @@ sectionwrapper {
 }
 
 #tema_2 {
-    background-image: url(portfolio_pics/Group%2031.svg);
+
     width: 24vw;
     height: 24vw;
     background-size: 100%;
@@ -311,7 +314,7 @@ sectionwrapper {
 }
 
 #tema_3 {
-    background-image: url(portfolio_pics/Group%2032.svg);
+
     width: 21vw;
     height: 21vw;
     background-size: 100%;
@@ -321,7 +324,7 @@ sectionwrapper {
 }
 
 #tema_4 {
-    background-image: url(portfolio_pics/Group%2033.svg);
+
     width: 26vw;
     height: 26vw;
     background-size: 100%;
