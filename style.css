@@ -3,13 +3,14 @@ a {
     color: #153CD6;
     font-size: 3rem;
     text-decoration: none;
+    text-decoration-line: none;
 
 }
 
 
 a:hover {
-    color: #FFEB00;
-    font-size: 3.4rem;
+    color: #0F2DA3;
+
 }
 
 p {
@@ -53,12 +54,12 @@ footer {
 
     margin-top: 2vw;
     text-align: center;
-
 }
 
 body {
     background-color: #F5BAC2;
 }
+
 
 
 /* BURGERMENU */
@@ -153,14 +154,14 @@ body {
  * at the top left of the screen
  */
 #menu {
-    position: absolute;
+    position: fixed;
     width: 300px;
     margin: -100px 0 0 0;
     padding: 50px;
     padding-top: 100px;
-    right: -100px;
+    right: -90px;
 
-    background: #ededed;
+    background: #E2A3AC;
     list-style-type: none;
 
     /* to stop flickering of text in safari */
@@ -172,8 +173,8 @@ body {
 }
 
 #menu li {
-    padding: 10px 0;
-    font-size: 22px;
+    padding: 5px;
+    font-size: 25px;
 }
 
 /*
@@ -185,6 +186,12 @@ body {
 }
 
 /***************BURGER MENU SLUT******************/
+
+/**********FORSIDE**********/
+#forside .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
 
 .linn_marie {
 
@@ -200,7 +207,7 @@ body {
     margin-top: 2vw;
     margin-left: 25vw;
     font-size: 6rem;
-    text-decoration-line: underline;
+
 }
 
 .link_hvem {
@@ -235,27 +242,60 @@ body {
 }
 
 /****STYLING AF CIRKLER*****/
+/*******
+#rundkreds {
+    z-index: 100;
+    width: 10vw;
+    height: 10vw;
+    border-style: solid;
+    border-color: aqua;
+    border-width: medium;
+    border-radius: 100%;
+    border-top: 5vw;
+    border-left: 10vw;
 
-.cirkel_1 {
+}
+
+#cirkel_1 {
+    height: 4.5vw;
+    width: 4.5vw;
+    border-radius: 100%;
+    border: 1.5px solid #153CD6;
+    margin-top: 5vw;
+    margin-left: -40vw;
+    z-index: 100;
+}
+
+#cirkel_2 {
+    height: 10vw;
+    width: 10vw;
+    border-radius: 50%;
+    border: 1.5px solid #153CD6;
+    margin-top: -80vw;
+    margin-left: 36vw;
+}
+
+#cirkel_3 {
     height: 4.5vw;
     width: 4.5vw;
     border-radius: 100%;
     display: inline-block;
     border: 1.5px solid #153CD6;
-    margin-top: -100vw;
-    margin-left: -19vw;
+    margin-top: 20vw;
+    margin-left: 20vw;
+    z-index: 100;
 }
 
-.cirkel_2 {
-    height: 7vw;
-    width: 7vw;
+#cirkel_4 {
+    height: 10vw;
+    width: 10vw;
     border-radius: 50%;
     display: inline-block;
     border: 1.5px solid #153CD6;
-    margin-top: -80vw;
-    margin-left: -20vw;
+    margin-top: -100vw;
+    margin-left: -40vw;
 }
-
+******/
 /*******HVEM ER JEG********/
 .hvem_er_jeg {
     margin-left: 13vw;
@@ -288,9 +328,50 @@ img {
     margin-top: 2vw;
 }
 
-sectionwrapper {
+#ramme_web {
+
+    width: 50vw;
+    height: 35vw;
+    border-style: solid;
+    border-color: #153CD6;
+    border-width: medium;
+
+}
+
+.ramme_position_web {
+
+    margin: inherit;
+    margin-top: 2vw;
+    height: 10vw;
+    padding: 1vw;
+}
+
+#se_website1 {
+
+    width: 20vw;
+    height: 20vw;
+    margin-left: 60vw;
+    margin-top: 6.5vw;
+
+}
+
+/****[sectionlort]*******
+.sectionwrapper {
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
     width: 100%;
     height: 100%;
+}
+****/
+
+#portfolio_top .sectionwrapper {
+    width: 100vw;
+    height: 56.25vw;
+}
+
+portfolio.menu {
+    margin-top: 0vw;
 }
 
 #tema_1 {
@@ -300,7 +381,7 @@ sectionwrapper {
     background-size: 100%;
     position: absolute;
     margin-top: 3vw;
-    margin-left: 1.5vw;
+    margin-left: -2vw;
 }
 
 #tema_2 {
@@ -309,7 +390,7 @@ sectionwrapper {
     height: 24vw;
     background-size: 100%;
     position: absolute;
-    margin-left: 30vw;
+    margin-left: 27vw;
     margin-top: 18vw;
 }
 
@@ -329,10 +410,14 @@ sectionwrapper {
     height: 26vw;
     background-size: 100%;
     position: absolute;
-    margin-left: 71vw;
+    margin-left: 68vw;
     margin-top: 15vw;
 }
 
+.sectionwrapper #portfolio_web {
+    width: 100vw;
+    height: 56.25vw;
+}
 
 #web {
     margin-right: 10vw;
