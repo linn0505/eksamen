@@ -14,7 +14,7 @@ body {
     background: #F5BAC2;
 }
 
-    /*FONTS*/
+/*FONTS*/
 
 a {
     font-family: 'Monoton', cursive;
@@ -33,12 +33,13 @@ a:hover {
 p {
     font-family: 'Monoton', cursive;
     color: #153CD6;
-    font-size: 4rem;
+    font-size: 4.5rem;
+    margin: 0.3vw;
 }
 
 
 
-h8 {
+h1 {
     font-family: 'Raleway', sans-serif;
     color: #153CD6;
     font-size: 1.1rem;
@@ -46,18 +47,7 @@ h8 {
     line-height: 2.3vw;
 }
 
-h9 {
-    font-family: 'Monoton', cursive;
-    color: #153CD6;
-    font-size: 4.5rem;
 
-}
-
-h10 {
-    font-family: 'Monoton', cursive;
-    color: #153CD6;
-    font-size: 1rem;
-}
 
 
 #forside footer {
@@ -69,7 +59,7 @@ h10 {
     text-align: center;
 }
 
-#kontakt footer{
+#kontakt footer {
     font-family: 'Monoton', cursive;
     color: #153CD6;
     font-size: 0.9rem;
@@ -78,14 +68,7 @@ h10 {
     text-align: center;
 }
 
-#portfolio_ux footer{
-    font-family: 'Monoton', cursive;
-    color: #153CD6;
-    font-size: 0.9rem;
 
-    margin-top: 43vw;
-    text-align: center;
-}
 
 
 /* BURGERMENU */
@@ -235,7 +218,7 @@ h10 {
 
 
 
-#hvem_er_jeg .sectionwrapper{
+#hvem_er_jeg .sectionwrapper {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row-reverse;
@@ -249,12 +232,12 @@ h10 {
 
 }
 
-#hvem_er_jeg .col_narrow{
+#hvem_er_jeg .col_narrow {
     flex-basis: 300px;
     flex-grow: 1;
 }
 
-#web .sectionwrapper{
+#web .sectionwrapper {
     display: flex;
     flex-wrap: wrap;
 }
@@ -266,17 +249,17 @@ h10 {
     margin-right: 30px;
     margin-left: 30px;
     border: solid;
-    border-color:  #153CD6;
+    border-color: #153CD6;
     padding: 2vw;
 }
 
-#web .col_narrow{
+#web .col_narrow {
     flex-basis: 300px;
     flex-grow: 1;
     margin-left: 60px;
 }
 
-#animation .sectionwrapper{
+#animation .sectionwrapper {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row-reverse;
@@ -289,18 +272,18 @@ h10 {
     margin-right: 30px;
     margin-left: 30px;
     border: solid;
-    border-color:  #153CD6;
+    border-color: #153CD6;
     padding: 2vw;
 }
 
-#animation .col_narrow{
+#animation .col_narrow {
     flex-basis: 300px;
     flex-grow: 1;
-    margin-left: 60px;
+    margin-left: 70px;
 }
 
 
-#ux .sectionwrapper{
+#ux .sectionwrapper {
     display: flex;
     flex-wrap: wrap;
 
@@ -313,17 +296,17 @@ h10 {
     margin-right: 30px;
     margin-left: 30px;
     border: solid;
-    border-color:  #153CD6;
+    border-color: #153CD6;
     padding: 2vw;
 }
 
-#ux .col_narrow{
+#ux .col_narrow {
     flex-basis: 300px;
     flex-grow: 1;
     margin-left: 60px;
 }
 
-#content .sectionwrapper{
+#content .sectionwrapper {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row-reverse;
@@ -337,16 +320,17 @@ h10 {
     margin-right: 30px;
     margin-left: 30px;
     border: solid;
-    border-color:  #153CD6;
+    border-color: #153CD6;
     padding: 2vw;
 }
 
-#content .col_narrow{
+#content .col_narrow {
     flex-basis: 300px;
     flex-grow: 1;
     margin-left: 60px;
 }
-******////
+
+
 
 #links {
     display: flex;
@@ -388,8 +372,6 @@ h10 {
     border-color: #153CD6;
     border-width: medium;
 
-
-
 }
 
 .ramme_position {
@@ -405,37 +387,6 @@ h10 {
 
 }
 
-/******************CIRKLER***************************/
-
-#cirkel1v {
-    width: 20vw;
-    height: 20vw;
-    margin-left: 1vw;
-    margin-top: -10vw;
-}
-
-
-/*******HVEM ER JEG********/
-
-
-/***img {
-    height: 40vw;
-    width: 49vw;
-    margin-top: -1vw;
-    margin-left: -5vw;
-}**/
-
-.hvem_overskrift{
-    margin: 2vw;
-    margin-top: -1.7vw;
-}
-.text {
-    padding: none;
-    box-sizing: border-box;
-    margin-top: -60vw;
-    margin-left: 38vw;
-
-}
 
 
 /*******HVEM ER JEG SLUT*******/
@@ -444,33 +395,28 @@ h10 {
 
 /* Three image containers (use 25% for four, and 50% for two, etc) */
 .column {
-  display:inline-flex;
+    display: inline-flex;
     margin: 1vw;
-align-items: center;
+    align-items: center;
 }
 
 /* Clear floats after image containers */
-.row::after {
-  content:;
-  clear: both;
-  display: table;
-}
 
 
 .row {
-  display:inline-flex;
+    display: inline-flex;
 }
 
 #portfolio_top .sectionwrapper {
-  display:flex;
+    display: flex;
     flex-wrap: wrap;
 }
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 500px) {
-  .column {
-    width: 100%;
-  }
+    .column {
+        width: 100%;
+    }
 }
 
 .portfolio_overskrift {
@@ -480,30 +426,20 @@ align-items: center;
 }
 
 
-.overskrifter{
-  margin-left: 1vw;
+.overskrifter {
+    margin-left: 1vw;
     margin-top: 3vw;
 }
-.column img{
+
+.column img {
     margin-top: 5vw;
-    margin-bottom:14vw;
-    width: 23vw;;
+    margin-bottom: 14vw;
+    width: 23vw;
+    ;
 
 }
 
 
-.tema1_eks figure{
-    box-sizing: border-box;
-    background-color: aqua;
-
-}
-
-#tema1_eks{
-    width: 30vw;
-    margin-left: 50vw;
-    margin-top: -40vw;
-box-sizing: border-box;
-}
 
 
 /****************************PORTFOLIO SLUT**********************************************/
@@ -511,29 +447,43 @@ box-sizing: border-box;
 
 
 
-.kontakt_overskrift{
-    margin: 2vw;
-    margin-top: 2vw;
-    margin-left: 7vw;
-}
 
-.mail img{
+
+.mail img {
     margin-top: 1vw;
-    margin-bottom:14vw;
-    width: 35vw;;
+    margin-bottom: 14vw;
+    width: 35vw;
+    ;
     position: absolute;
 
     margin-left: 50vw;
 }
 
-.tlf img{
-     margin-top: 10vw;
+.tlf img {
+    margin-top: 10vw;
     margin-left: 15vw;
-    margin-bottom:14vw;
-    width: 20vw;;
-     position: absolute;
+    margin-bottom: 14vw;
+    width: 20vw;
+    ;
+    position: absolute;
 }
 
+.rotation {
+    animation-name: rotation_kf;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+}
+
+@keyframes rotation_kf {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
 
 
 /*MEDIA QUERY forside*/
@@ -586,8 +536,7 @@ box-sizing: border-box;
 
 @media only screen and (max-width:600px) {
     div.portfolio_overskrift {
-        text-align:center;
+        text-align: center;
         margin: 0 0 0 0;
     }
 }
-
